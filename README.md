@@ -59,21 +59,40 @@
 1. Чистый VPS с **Ubuntu 20.04+** или **Debian 11+**
 2. Права **root**
 
-### Установка:
+### Установка одной командой:
 
-~~~bash
-# 1. Клонируйте репозиторий
-git clone [https://github.com/imcrazymonk-pixel/shield.git](https://github.com/imcrazymonk-pixel/shield.git)
+Этот способ загрузит только сам скрипт и запустит его.
 
-# 2. Перейдите в папку
-cd shield
+```bash
+# Скачать скрипт и сделать его исполняемым
+wget -O Shield.sh https://raw.githubusercontent.com/imcrazymonk-pixel/shield/main/Shield.sh && chmod +x Shield.sh
 
-# 3. Дайте права на выполнение
-chmod +x Shield.sh
-
-# 4. Запустите
+# Запустить
 ./Shield.sh
-~~~
+```
+
+### 📂 Альтернатива: Ручная загрузка
+
+Если по какой-либо причине сервер не может скачать файл автоматически, выполните следующие шаги:
+
+1. **Скачайте скрипт** на свой компьютер:
+   - Откройте [эту ссылку](https://raw.githubusercontent.com/imcrazymonk-pixel/shield/main/Shield.sh).
+   - Нажмите `Ctrl+S` (или ПКМ -> "Сохранить как") и сохраните файл под именем `Shield.sh`.
+
+2. **Загрузите файл на сервер**.
+   Откройте терминал на своем компьютере (PowerShell или CMD) и выполните команду:
+   ```bash
+   # Замените IP_SERVERA на реальный IP вашего VPS
+   scp Shield.sh root@IP_SERVERA:/root/
+   ```
+   *(Также можно использовать программы вроде WinSCP или FileZilla).*
+
+3. **Запустите установку**.
+   Зайдите на сервер по SSH и выполните:
+   ```bash
+   chmod +x Shield.sh
+   ./Shield.sh
+   ```
 
 ---
 
