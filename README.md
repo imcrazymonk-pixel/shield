@@ -4,7 +4,6 @@
 
 [![Bash](https://img.shields.io/badge/language-bash-black.svg)](https://www.gnu.org/software/bash/)
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **Особенности:**
 - 🚀 **Быстрый старт:** Полная настройка чистого VPS за 3-5 минут
