@@ -2602,7 +2602,6 @@ install_packages() {
         "zip"
         "unzip"
         "jq"
-        "neofetch"
     )
 
     echo -e "${BLUE}${ICON_GEAR} Будут установлены пакеты (${#PACKAGES[@]} шт):${RESET}"
